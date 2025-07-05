@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.py", // Your Streamlit app file
+      "src": "app.py", 
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "15mb", // Adjust if your app is large
-        "runtime": "python3.9" // Or your desired Python version
+        "maxLambdaSize": "15mb", 
+        "runtime": "python3.9" 
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.py" // Route all requests to your Streamlit app
+      "dest": "app.py" 
     }
   ]
 }
